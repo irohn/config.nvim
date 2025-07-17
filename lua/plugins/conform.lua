@@ -1,17 +1,7 @@
 return {
 	"stevearc/conform.nvim",
-	opts = {
-		formatters_by_ft = {
-			c = { "clang-format" },
-			cpp = { "clang-format" },
-			go = { "gofumpt" },
-			lua = { "stylua" },
-			nix = { "nixfmt" },
-			python = { "ruff" },
-			rust = { "rustfmt" },
-			sh = { "shfmt" },
-		},
-	},
+	cmd = { "ConformInfo" },
+	event = { "BufWritePre" },
 	keys = {
 		{
 			"<c-f>",
@@ -20,6 +10,19 @@ return {
 			end,
 			desc = "Format",
 		},
+	},
+	opts = {
+		formatters_by_ft = {
+			c = { "clang-format" },
+			cpp = { "clang-format" },
+			go = { "gofumpt" },
+			lua = { "stylua" },
+			nix = { "nixfmt", "alejandra" },
+			python = { "ruff" },
+			rust = { "rustfmt" },
+			sh = { "shfmt" },
+		},
+		format_on_save = { timeout_ms = 500 },
 	},
 }
 
