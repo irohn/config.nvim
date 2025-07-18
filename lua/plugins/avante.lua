@@ -24,6 +24,12 @@ return {
 				claude = {
 					api_key_name = "cmd:cat " .. vim.env.XDG_RUNTIME_DIR .. "/agenix/anthropic-api-key.age",
 				},
+				gemini = {
+					api_key_name = "cmd:cat " .. vim.env.XDG_RUNTIME_DIR .. "/agenix/gemini-api-key.age",
+				},
+				openai = {
+					api_key_name = "cmd:cat " .. vim.env.XDG_RUNTIME_DIR .. "/agenix/openai-api-key.age",
+				},
 				copilot = {
 					endpoint = "https://api.githubcopilot.com",
 					proxy = nil,
