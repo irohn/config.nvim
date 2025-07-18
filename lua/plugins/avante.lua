@@ -21,9 +21,9 @@ return {
 		opts = {
 			provider = "claude",
 			providers = {
-        claude = {
-          api_key_name = "cmd:cat " .. vim.env.XDG_RUNTIME_DIR .. "/agenix/anthropic-api-key.age",
-        },
+				claude = {
+					api_key_name = "cmd:cat " .. vim.env.XDG_RUNTIME_DIR .. "/agenix/anthropic-api-key.age",
+				},
 				copilot = {
 					endpoint = "https://api.githubcopilot.com",
 					proxy = nil,
@@ -40,6 +40,13 @@ return {
 			},
 			windows = {
 				width = 40,
+			},
+		},
+		keys = {
+			{
+				"<leader>ac",
+				"<cmd>AvanteChatNew<cr>",
+				desc = "New Avante Chat",
 			},
 		},
 	},
