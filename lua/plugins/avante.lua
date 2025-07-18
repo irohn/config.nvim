@@ -19,8 +19,11 @@ return {
 		---@module "avante"
 		---@type avante.Config
 		opts = {
-			provider = "copilot",
+			provider = "claude",
 			providers = {
+        claude = {
+          api_key_name = "cmd:cat " .. vim.env.XDG_RUNTIME_DIR .. "/agenix/anthropic-api-key.age",
+        },
 				copilot = {
 					endpoint = "https://api.githubcopilot.com",
 					proxy = nil,
