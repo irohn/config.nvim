@@ -1,7 +1,3 @@
-vim.pack.add({
-	{ src = "https://github.com/folke/snacks.nvim" },
-})
-
 local snacks = require("snacks")
 
 snacks.setup({

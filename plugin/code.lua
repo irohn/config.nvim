@@ -1,11 +1,3 @@
-vim.pack.add({
-	{ src = "https://github.com/nvim-lua/plenary.nvim" },
-	{ src = "https://github.com/MunifTanjim/nui.nvim" },
-	{ src = "https://github.com/zbirenbaum/copilot.lua" },
-	{ src = "https://github.com/MeanderingProgrammer/render-markdown.nvim" },
-	{ src = "https://github.com/yetone/avante.nvim", version = "main" },
-})
-
 require("copilot").setup({
 	suggestion = {
 		auto_trigger = true,
