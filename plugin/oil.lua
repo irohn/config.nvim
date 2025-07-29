@@ -26,6 +26,15 @@ require("oil").setup({
 	},
 	view_options = {
 		show_hidden = true,
+		is_always_hidden = function(name, _)
+			local hidden_dirs = { "..", ".git", ".direnv" }
+			for _, dir in ipairs(hidden_dirs) do
+				if name == dir then
+					return true
+				end
+			end
+			return false
+		end,
 	},
 	float = {
 		max_width = 0.5,
