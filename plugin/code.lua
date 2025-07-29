@@ -1,6 +1,7 @@
 vim.pack.add({
 	{ src = "https://github.com/nvim-lua/plenary.nvim" },
 	{ src = "https://github.com/MunifTanjim/nui.nvim" },
+	{ src = "https://github.com/nvim-treesitter/nvim-treesitter", branch = "main" },
 	{ src = "https://github.com/MeanderingProgrammer/render-markdown.nvim" },
 	{ src = "https://github.com/zbirenbaum/copilot.lua" },
 	{ src = "https://github.com/ravitemer/mcphub.nvim" },

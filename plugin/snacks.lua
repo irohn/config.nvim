@@ -27,4 +27,6 @@ vim.keymap.set("n", "<leader>fu", snacks.picker.undo)
 vim.keymap.set({ "n", "t" }, "<c-x>", function()
 	snacks.terminal()
 end)
+vim.keymap.set("n", "<leader>sd", snacks.picker.diagnostics_buffer)
+vim.keymap.set("n", "<leader>sD", snacks.picker.diagnostics)
 -- vim: ts=2 sts=2 sw=2 et
