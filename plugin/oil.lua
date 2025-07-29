@@ -4,7 +4,7 @@ vim.pack.add({
 
 require("oil").setup({
 	win_options = {
-		signcolumn = "yes:3",
+		signcolumn = "yes:1",
 		number = false,
 		relativenumber = false,
 	},
