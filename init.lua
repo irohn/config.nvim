@@ -65,15 +65,8 @@ vim.pack.add({
 	{ src = "https://github.com/MeanderingProgrammer/render-markdown.nvim" },
 	{ src = "https://github.com/yetone/avante.nvim", version = "main" },
 
-	{ src = "https://github.com/catppuccin/nvim", name = "catppuccin" },
-	{ src = "https://github.com/rebelot/kanagawa.nvim", name = "kanagawa" },
-	{ src = "https://github.com/folke/tokyonight.nvim", name = "tokyonight" },
-	{ src = "https://github.com/ellisonleao/gruvbox.nvim", name = "gruvbox" },
-	{ src = "https://github.com/olimorris/onedarkpro.nvim", name = "onedarkpro" },
-	{ src = "https://github.com/vague2k/vague.nvim", name = "vague" },
 	{ src = "https://github.com/webhooked/kanso.nvim", name = "kanso" },
 	{ src = "https://github.com/EdenEast/nightfox.nvim", name = "nightfox" },
-	{ src = "https://github.com/scottmckendry/cyberdream.nvim", name = "cyberdream" },
 
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
 	{ src = "https://github.com/j-hui/fidget.nvim" },
